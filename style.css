@@ -1,0 +1,118 @@
+.main {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.layout {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.top-banner {
+  
+}
+
+.parallax-ends { 
+    /* The image used */
+    background-image: url("images/background.jpg");
+    /* Set a specific height */
+    height: 100%; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-mid { 
+    /* The image used */
+    background-image: url("images/background2.jpg");
+    /* Set a specific height */
+    height: 70%; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divider {
+  color: #F2F1E6; 
+  background-color: #9F9F9F;
+  font-size:36px;
+  height:200px;
+  text-align: center; 
+}
+
+.YoutubeTable {
+  width: 50%;
+}
+
+.youtubeRows {
+  width: 50%;
+}
+
+.clipThumbnails {
+  width: auto;
+}
+
+.videoPlayer {
+  position: relative;
+  top: 50%;
+  margin-top: -157px;
+  opacity: 1;
+}
+
+.div-player {
+  position: fixed;
+  background-attachment: fixed;
+  height: 80%;
+  top: 10%;
+  width: 100%;
+  background-color: #303030;
+  opacity: 0.90;
+  text-align: center;
+  z-index: 10;
+}
+
+.div-banner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+
+  text-align: center;
+  color: #000;
+}
+
+.div-content {
+  height: 100%;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 25%;
+  text-align: center;
+}
+
+.welcome {
+  background-color: #9F9F9F;
+  padding: 25px;
+  font-size: 32px;
+  color: #F2F1E6;
+  letter-spacing: 5px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax-ends {
+    background-attachment: scroll;
+  }
+  .parallax-mid {
+    background-attachment: scroll;
+  }
+}

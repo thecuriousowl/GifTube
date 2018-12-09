@@ -1,0 +1,13 @@
+// Local Variables and Declarations
+
+// api ( table of defined function )
+
+// events
+
+// init ( function that run on app start )
+
+// api fn ( define functions )
+
+// event fns
+
+// private _fns

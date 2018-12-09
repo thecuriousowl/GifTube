@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="mainApp" class="html">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="body" ng-controller="PageControls">
+    <div class="body" ng-click="vm.closePlayer()">
+
+      <div class="parallax-ends">
+        <div class="div-banner">
+          <span class="welcome">Hello World</span><br>
+        </div>
+      </div>
+
+      <div style="height:200px;background-color: #9F9F9F; color: #F2F1E6; text-align: center; font-size:36px">
+      </div>
+
+      <div class="parallax-mid">
+        <div class="div-content">
+          <table class="YoutubeTable">
+            <tr>
+              <th>Stuff I Like</th>
+            </tr>
+            <tr ng-repeat="id in vm.YoutubeIDs">
+              <td>
+                <picture class="clipThumbnails">
+                  <img src="https://img.youtube.com/vi/{{ id }}/0.jpg" ng-click="vm.startPlayer($event, id)">
+                </picture>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div style="height:200px;background-color: #9F9F9F; color: #F2F1E6; text-align: center; font-size:36px">
+      </div>
+
+      <div class="parallax-ends"></div>
+
+    </div>
+
+    <div ng-hide="vm.OffOn" class="div-player">
+      <iframe class="videoPlayer" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ng-src="{{ vm.currentID }}"></iframe>
+    </div>
+
+  </body>
+
+  <script data-require="angular.js@*" data-semver="4.0.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+  <script src="http://code.angularjs.org/snapshot/angular-sanitize.js"></script>
+  <script src="script.js"></script>
+
+</html>

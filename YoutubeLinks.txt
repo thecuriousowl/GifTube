@@ -1,0 +1,10 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SfSegih-VlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a2RA0vsZXf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/0.jpg
+
+480x360
