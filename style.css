@@ -1,12 +1,14 @@
 .main {
   height: 100%;
   width: 100%;
+  min-width: 800px;
   z-index: 0;
 }
 
 .layout {
   height: 100%;
   width: 100%;
+  min-width: 800px;
   z-index: 1;
 }
 
@@ -20,6 +22,7 @@
     /* Set a specific height */
     height: 100%; 
     width: 100%;
+    min-width: 800px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -32,8 +35,9 @@
     /* The image used */
     background-image: url("images/background2.jpg");
     /* Set a specific height */
-    height: 70%; 
+    height: 800px; 
     width: 100%;
+    min-width: 800px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -42,43 +46,64 @@
     background-size: cover;
 }
 
+.content {
+  height: 800px;
+  padding-top: 266px;
+  text-align: center;
+}
+
+.videoSection {
+  width: 100%;
+  height: 100%;
+}
+
+.videoTable {
+  width: 100%;
+  height: 100%;
+}
+
+.scrollingVideos {
+
+}
+
+.currentVideo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.player {
+  margin-top: 125px;
+  width: 979px;
+  height: 550px;
+}
+
+.disableOverflow {
+  overflow-x: hidden;
+}
+
+.cells {
+  padding: 5px;
+}
+
+.thumbs {
+  width: 300px;
+  height: 250px;
+  object-fit: none;
+}
+
+.scrollButton {
+  width: 100px;
+  height: 20px;
+}
+
 .divider {
   color: #F2F1E6; 
   background-color: #9F9F9F;
   font-size:36px;
   height:200px;
+  min-width: 800px;
   text-align: center; 
-}
-
-.YoutubeTable {
-  width: 50%;
-}
-
-.youtubeRows {
-  width: 50%;
-}
-
-.clipThumbnails {
-  width: auto;
-}
-
-.videoPlayer {
-  position: relative;
-  top: 50%;
-  margin-top: -157px;
-  opacity: 1;
-}
-
-.div-player {
-  position: fixed;
-  background-attachment: fixed;
-  height: 80%;
-  top: 10%;
-  width: 100%;
-  background-color: #303030;
-  opacity: 0.90;
-  text-align: center;
-  z-index: 10;
 }
 
 .div-banner {

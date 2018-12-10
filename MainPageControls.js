@@ -74,7 +74,7 @@
     }
   };
 
-  app.controller('MainPageControls', ['$scope', '$sce', MainPageControls]);
+  app.controller('MainControls', ['$scope', '$sce', MainPageControls]);
 
 
 }());

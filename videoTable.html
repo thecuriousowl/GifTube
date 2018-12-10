@@ -1,0 +1,20 @@
+<div class="content">
+
+  <div class="videoSection, disableOverflow">
+    <table class="videoTable">
+      <tbody>
+        <tr class="scrollingVideos">
+          <td ng-repeat="video in vm._list" class="cells">
+            <img src= "https://img.youtube.com/vi/{{ video }}/0.jpg" class="thumbs">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="currentVideo">
+    
+  </div>
+  <button class="scrollButton" ng-click="vm.authenticate()">Auth</button>
+  <button class="scrollButton" ng-click="vm.test()">Test</button>
+</div>

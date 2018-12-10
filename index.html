@@ -6,17 +6,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-    <body class="layout">
+    <body class="layout" ng-view>
       <h1>
         Top
       </h1>
-      <div class="layout" ng-view></div>
+      <div class="layout"></div>
     </body>
 
   <script data-require="angular.js@*" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
   <script data-require="angular-route@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
   <script data-require="sanitize@*" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular-sanitize.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
   <script src="app.js"></script>
-  <script src="MainPageControls.js"></script>
+  <script src="youtubeService.js"></script>
+  <script src="ContentController.js"></script>
 
 </html>
