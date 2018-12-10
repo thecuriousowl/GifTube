@@ -64,16 +64,10 @@
       var isAuthorized = user.hasGrantedScopes(SCOPE);
       console.log(isAuthorized)
       if (isAuthorized) {
-        $('#sign-in-or-out-button').html('Sign out');
-        $('#revoke-access-button').css('display', 'inline-block');
-        $('#auth-status').html('You are currently signed in and have granted ' +
-            'access to this app.');
+        console.log('You are currently signed in')
       } else {
+        console.log('Signing in to Youtube')
         GoogleAuth.signIn()
-        $('#sign-in-or-out-button').html('Sign In/Authorize');
-        $('#revoke-access-button').css('display', 'none');
-        $('#auth-status').html('You have not authorized this app or you are ' +
-            'signed out.');
       }
     }
 
@@ -82,11 +76,24 @@
     }
 
     function test() {
-      var request = gapi.client.youtube.channels.list({'part': 'snippet', 'mine': 'true'})
+
+      var request = gapi.client.youtube.videos.list({'myRating': 'like', 'part': 'snippet,contentDetails,statistics'})
       request.execute(function(response) {
         return response
       })
     }
+
+    function getChannel() {
+        gapi.client.youtube.channels.list({
+          'part': 'snippet,contentDetails,statistics',
+          'forUsername': 'Philip.L.Pan'
+        }).then(function(response) {
+          var channel = response.result.items[0]
+          console.log('This channel\'s ID is ' + channel.id + '. ' +
+                    'Its title is \'' + channel.snippet.title + ', ' +
+                    'and it has ' + channel.statistics.viewCount + ' views.')
+        });
+      }
 
     return{
       handleClientLoad: handleClientLoad,
@@ -95,6 +102,7 @@
       revokeAccess: revokeAccess,
       setSigninStatus: setSigninStatus,
       test: test,
+      getChannel: getChannel,
       updateSigninStatus: updateSigninStatus
     }
   }

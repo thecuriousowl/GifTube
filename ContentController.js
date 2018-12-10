@@ -21,7 +21,7 @@
 
     function test() {
       console.log("Making a Request")
-      console.log(yts.test())
+      yts.test()
     }
 
     function loadVideos(input) {
