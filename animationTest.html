@@ -1,9 +1,9 @@
 <div class="animatedSection">
-  <table>
+  <table class="videoTable">
     <tbody>
       <tr>
-        <td ng-repeat="video in vm.list">
-          <img src= "https://img.youtube.com/vi/{{ video }}/0.jpg" class="thumbs">
+        <td test-directive ng-repeat="video in vm.list" video="video" handle-video="vm.handleVideo($index, videoId)">
+          <div>test div</div>
         </td>
       </tr>
     </tbody>

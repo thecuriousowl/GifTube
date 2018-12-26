@@ -47,10 +47,8 @@
 
     function handleAuthClick() {
       if (GoogleAuth.isSignedIn.get()) {
-        // User is authorized and has clicked 'Sign out' button.
         GoogleAuth.signOut();
       } else {
-        // User is not signed in. Start Google auth flow.
         GoogleAuth.signIn();
       }
     }
